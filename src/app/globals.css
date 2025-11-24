@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Custom container styles */
+.container {
+  margin-inline: auto;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.myHeight {
+  height: calc(100vh - 135px);
+}
+
+/* Font faces */
+@font-face {
+  font-family: "WorkSans";
+  src: url("/font/WorkSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("/font/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("/font/WorkSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("/font/WorkSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800; /* ExtraBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("/font/WorkSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("/font/WorkSans-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+/* Global font family */
+* {
+  font-family: "WorkSans", sans-serif;
+}
+
+/* Range input styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #111827; /* gray-900 */
+  border: 2px solid #f59e0b; /* yellow-500 */
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #111827;
+  border: 2px solid #f59e0b;
+  cursor: pointer;
+}
+
